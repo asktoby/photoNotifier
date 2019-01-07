@@ -1,0 +1,13 @@
+
+set datafile separator ","
+set xdata time
+set timefmt "%d-%m-%y"
+set format x "%m/%d/%y"
+
+set xlabel "Time"
+set ylabel "Photos"
+
+set yrange [0:]
+
+set terminal dumb
+plot "data.txt" using 1:2 with lines
